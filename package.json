@@ -1,0 +1,15 @@
+{
+  "name": "combo",
+  "version": "1.0.0",
+  "description": "A combination of various tutorial practice. A reason for this combination is to reduce the duplication of the node_modules directory.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Emmanuel Eni",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
