@@ -57,6 +57,33 @@ function twoSum(nums, target) {
       if (nums[i] + nums[j] === target) return [i, j];
     }
   }
+  console.log(`No two numbers added up to the target.`)
 }
-console.log(twoSum([1, 2, 3, 4, 5], 3))
+// console.log(twoSum([1, 2, 3, 4, 5], 3))
 // console.log(twoSum([2, 7, 11, 15], 9))
+// console.log(twoSum([2, 7, 11, 15], 26))
+// console.log(twoSum([2, 7, 11, 15], 25))
+
+// BY-THE-WAY EXPERIMENT 1
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      console.log(`${nums[i]} + ${nums[j]} = ${nums[i] + nums[j]}`)
+      // if (nums[i] + nums[j] === target) return [i, j];
+    }
+  }
+  // console.log(`No two numbers added up to the target.`)
+}
+// console.log(twoSum([2, 7, 11, 15], 26))
+
+// BY-THE-WAY EXPERIMENT 2
+function twoSum(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      console.log(`${nums[i]} + ${nums[j]} = ${nums[i] + nums[j]}`)
+      // if (nums[i] + nums[j] === target) return [i, j];
+    }
+  }
+  // console.log(`No two numbers added up to the target.`)
+}
+console.log(twoSum([2, 7, 11, 15]))
